@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>长乐小卖部</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="assets/flexslider/flexslider.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script src="assets/js/fontSize.js"></script>
+</head>
+<body>
+
+<div id="globalLoading" class="global-loading">
+    <div class="global-loading-logo">
+        <div id="globalLoadingAnim" class="global-loading-anim"></div>
+    </div>
+    <div class="global-loading-text">正在努力为您加载中...</div>
+</div>
+
+<script src="assets/js/loading.js"></script>
+
+<div class="wrapper">
+    <div class="wrap">
+      <div class="layout_panel">
+        <div class="layout" id="layout">
+          <!--表单输入登录-->
+          <div class="mainbox" id="login-main">
+            <!-- header s -->
+            <div class="lgnheader">
+              <div class="header_tit t_c">
+                <em id="custom_display_1" class="milogo">
+                  <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="50" style="fill:#ef5b00"></rect>
+                    <rect x="11.25" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+                    <rect x="11.25" y="15" width="12.5" height="5" style="fill:#FFFFFF"></rect>
+                    <rect x="26.25" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+                    <rect x="33.75" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+                    <circle cx="23.75" cy="22.5" r="7.5" fill="#FFFFFF"></circle>
+                    <rect x="16.25" y="20" width="7.5" height="15" style="fill:#ef5b00"></rect>
+                    <rect x="16.25" y="22.5" width="10" height="12.5" style="fill:#ef5b00"></rect>
+                    <circle cx="23.75" cy="22.5" r="2.5" fill="#ef5b00"></circle>
+                    <rect x="18.75" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+                  </svg>
+                </em>
+                <h4 class="header_tit_txt" id="login-title">长乐未央 帐号登录</h4>
+              </div>
+            </div>
+            <!-- header e -->
+            <!-- tab con s -->
+            <div class="tabs-con tabs_con now" data-con="pwd">
+              <div>
+                <div class="login_area">
+                  <form action="/pass/serviceLoginAuth2" method="POST" id="login-main-form">
+                    <div class="loginbox c_b">
+                      <!-- 输入框 -->
+                      <div class="lgn_inputbg c_b login-panel pwdLogin">
+
+                        <label id="region-code" class="labelbox login_user c_b">
+                          <input class="item_account" autocomplete="off" type="text" name="user" id="username"
+                                 placeholder="邮箱/手机号码/用户名">
+                        </label>
+
+                        <label class="labelbox pwd_panel c_b">
+                          <input type="password" placeholder="密码" autocomplete="off" name="pwd" id="pwd">
+                        </label>
+                      </div>
+
+                      <div class="btns_bg">
+                        <input class="btnadpt btn_orange" id="login-button" type="submit" value="登录">
+                      </div>
+
+                      <div class="other_panel clearfix">
+                        <div class="reverse">
+                          <div class="n_links_area" id="custom_display_64">
+                            <a class="outer-link"
+                               href="">立即注册</a><span>|</span>
+                            <a class="outer-link"
+                               href="">忘记密码？</a>
+                          </div>
+                          <!-- 其他登录方式 s -->
+                          <div style="display: block;" class="other_login_type sns-login-container"
+                               id="custom_display_16">
+                            <fieldset class="oth_type_tit">
+                              <legend align="center" class="oth_type_txt">其他方式登录</legend>
+                            </fieldset>
+                            <div class="oth_type_links">
+                              <a class="icon_type btn_qq sns-login-link" data-type="qq"
+                                 href=""
+                                 title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a>
+                              <a class="icon_type btn_weibo sns-login-link" data-type="weibo"
+                                 href=""
+                                 title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a>
+                              <a class="icon_type btn_alipay sns-login-link" data-type="alipay"
+                                 href=""
+                                 title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a>
+                            </div>
+                          </div>
+                          <!-- 其他登录方式 e -->
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="custom_display_4" class="n-footer">
+      <div class="nf-link-area clearfix">
+        <ul class="lang-select-list">
+          <li><a href="javascript:void(0)" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li>
+          <li><a href="" data-lang="zh_TW" class="lang-select-li">繁体</a>|</li>
+          <li><a href="" data-lang="en" class="lang-select-li">English</a>|</li>
+          <li><a href="" target="_blank">常见问题</a></li>
+        </ul>
+      </div>
+      <p class="nf-intro">
+        长乐未央公司版权所有-鄂ICP备10046444-
+        <a class="beian-record-link" target="_blank" href="">
+          <span><img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"></span>
+          鄂公网安备11010802020134号</a>-鄂ICP证110507号
+      </p>
+    </div>
+  </div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+<script defer src="assets/flexslider/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            directionNav: false
+        });
+    });
+</script>
+</body>
+</html>
