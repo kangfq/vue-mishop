@@ -12,14 +12,13 @@
                     </li>
                     <li class="ui-list-item">
                         <div class="label">手机号码：</div>
-                        <div class="ui-input"><input placeholder="手机号" maxlength="13" type="tel" v-model="address.tel">
+                        <div class="ui-input"><input placeholder="手机号" maxlength="13" type="tel" v-model="address.tel" >
                         </div>
                     </li>
                     <li class="ui-list-item">
                         <div class="label">所在地区：</div>
                         <div class="ui-input">
-                            <input placeholder="省 市 区"   type="text"
-                                   v-model="address.pcd" value="">
+                            <input placeholder="省 市 区"  type="text"  v-model="address.pcd"/>
                         </div>
                     </li>
                     <li class="ui-list-item">
@@ -42,8 +41,6 @@
                 <div class="ui-pop-title">选择所在地区</div>
                 <div class="ui-pop-close"><a><span class="icon-10chahaokuang"></span></a></div>
             </div>
-
-
             <div class="popup-risk-check"></div>
         </div>
         </form>
@@ -55,7 +52,6 @@
 <script>
     export default {
         name: "Newaddress",
-
         data() {
             return {
                 address: {

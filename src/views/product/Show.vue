@@ -120,6 +120,7 @@
                     .then((res=>{
                         this.product=res.data.product
                         this.rec_products=res.data.rec_products
+                        document.title = this.product.name;
                     }))
             },
             buy(){

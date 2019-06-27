@@ -37,6 +37,7 @@
             init:function () {
                 this.axios.get('api/category/'+this.$route.params.id).then((res)=>{
                     this.data=res.data
+                    document.title = this.data.name;
                 })
             }
         }

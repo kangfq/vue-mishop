@@ -11,18 +11,20 @@ import Footer from '@/components/Footer.vue'
 
 Vue.config.productionTip = false
 Vue.prototype.axios = axios;
-Vue.component('my-footer',Footer)
+Vue.component('my-footer', Footer)
 new Vue({
-  router,
-  store,
-  render: function (h) { return h(App) }
+    router,
+    store,
+    render: function (h) {
+        return h(App)
+    }
 }).$mount('#app')
 
+/* 路由发生变化修改页面title */
 router.beforeEach((to, from, next) => {
-  /* 路由发生变化修改页面title */
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
+    if (to.meta.title) {
+        document.title = to.meta.title;
+    }
+    next();
 })
 

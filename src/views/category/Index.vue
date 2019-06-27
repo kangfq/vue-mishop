@@ -35,6 +35,7 @@
                 this.axios.get('api/category/index').then((res)=>{
                     this.data=res.data
                 })
+                this.axios.delete
             }
         }
     }
